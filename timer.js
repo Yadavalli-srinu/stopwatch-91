@@ -39,7 +39,7 @@ function startBtn(){
        }
        time.textContent=hours+":"+minutes+":"+seconds;
        sec++;
-     },10)
+     },1000)
 }
 function stopBtn(){
    clearInterval(clock)
@@ -53,4 +53,5 @@ function resetBtn(){
     time.textContent="00:00:00";
     clearInterval(clock);
     istimerunning=false
+
 }
